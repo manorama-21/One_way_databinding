@@ -1,0 +1,32 @@
+<div class="center">
+<h1><u>One Way DataBinding</u></h1>
+</div>
+
+
+<div class="container">
+<!-- ----interpolation--- -->
+<!-- <h2>Interpolation</h2> -->
+<h2 [style.color]="ucolor" [style.background]="ubg">Interpolation</h2>
+<div>{{uname}}</div>
+
+
+<!-- --property binding--- -->
+<h2 [style.background]="ubg">Property Binding</h2>
+<div [innerHTML]="uname"></div>
+
+<!-- <p class="a">Manu</p>
+<p class="b">Manu</p>
+<p class="c">Manu</p> -->
+<h2 [class]="apply">hello</h2>
+
+
+
+<!-- ----Event binding-- -->
+<h2 [style.background]="ubg">Event Binding</h2>
+<!-- <button (click)="but()">change</button> -->
+<!-- <h2 (mouseout)="but()">Hello</h2> -->
+
+<label>Enter Name: </label><input type="text" #uname (keyup)="but(uname.value)"/>
+
+</div>
+
